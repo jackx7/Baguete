@@ -5,6 +5,7 @@ import path from 'node:path';
 import { applyCoffeeHero } from './coffee-hero.mjs';
 import { applyFeaturedImages } from './featured-images.mjs';
 import { applyWhatsappButton } from './whatsapp-button.mjs';
+import { applyFooterLogoAttention } from './footer-logo-attention.mjs';
 
 // Reproducible localization of the supplied reference; never executes downloaded code.
 const root = path.resolve(import.meta.dirname, '..');
@@ -96,6 +97,7 @@ html = html.replace('<html ', '<html lang="pt-BR" ')
 html = applyCoffeeHero(html);
 html = applyFeaturedImages(html);
 html = applyWhatsappButton(html);
+html = applyFooterLogoAttention(html);
 await writeFile(path.join(output, 'index.html'), html);
 await writeFile(path.join(root, 'scripts/mello-assets.json'), JSON.stringify(Object.fromEntries([...resources].map(([url, r]) => [url, r.local])), null, 2) + '\n');
 console.log(`Localized ${translated} text nodes; preserved original markup, styling and animation scripts.`);

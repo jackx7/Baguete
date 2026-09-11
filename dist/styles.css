@@ -83,6 +83,52 @@
   transform: scale(1.05);
 }
 
+/* Keep the hand-drawn attention marks centered above the footer emblem. */
+.footer-info-text .logo {
+  position: relative;
+}
+
+.illustration.footer-logo-illu {
+  left: 50% !important;
+  top: -48px !important;
+  width: 52px !important;
+  z-index: 2;
+  pointer-events: none;
+  transform: translateX(-50%) rotate(4deg) !important;
+  transform-origin: 50% 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .illustration.footer-logo-illu {
+    animation: footer-logo-attention 1.8s cubic-bezier(.34, 1.56, .64, 1) infinite;
+    will-change: transform, opacity;
+  }
+}
+
+@keyframes footer-logo-attention {
+  0%, 58%, 100% {
+    opacity: .78;
+    transform: translateX(-50%) rotate(4deg) scale(.94);
+  }
+  68% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(-5deg) scale(1.08);
+  }
+  78% {
+    transform: translateX(-50%) rotate(6deg) scale(1.02);
+  }
+  88% {
+    transform: translateX(-50%) rotate(1deg) scale(1.06);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .illustration.footer-logo-illu {
+    top: -42px !important;
+    width: 44px !important;
+  }
+}
+
 /* Hide Webflow branding badge and footer link */
 .w-webflow-badge,
 a[href*="webflow.com"] {
