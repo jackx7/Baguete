@@ -253,3 +253,95 @@ a[href*="webflow.com"] {
 @media (prefers-reduced-motion: reduce) {
   .whatsapp-float { transition: none; }
 }
+
+/* Mobile composition: content must never wait for a scroll entrance to be read. */
+@media screen and (max-width: 767px) {
+  html, body { overflow-x: clip; }
+  .header { position: relative !important; inset: auto !important; }
+  .header .container { padding-inline: 16px; }
+  .header .menu { padding-block: 12px; }
+  .header .menu-content { gap: 12px; }
+  .header .site-logo-img { height: 76px !important; }
+  .header .menu-links {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr 1fr;
+    gap: 4px;
+    width: 100%;
+    max-width: 440px;
+    padding: 4px;
+    border: 1px solid var(--black-opacity--10);
+    border-radius: 16px;
+  }
+  .header .menu-link {
+    display: flex;
+    min-height: 44px;
+    padding: 8px 4px;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: var(--black) !important;
+  }
+  .header .menu-link .emphasis-l { font-size: 13px; line-height: 1.2; }
+  .header .menu-link .link-background { display: none; }
+  .header .menu-link:active { background: var(--black-opacity--10); }
+  .hero {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    padding: 64px 0 16px;
+  }
+  .hero .container { padding-inline: 20px; }
+  .hero-content { width: 100%; gap: 20px; }
+  .hero-text { width: 100%; gap: 20px; }
+  .h1.hero-h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(32px, 8.5vw, 58px);
+    line-height: 1.06;
+    text-align: center;
+  }
+  .illustration.hero-1-illu {
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    top: -46px;
+    opacity: 1 !important;
+    transform: rotate(-10deg) !important;
+  }
+  .hero .buttons-wrapper { flex-flow: row; gap: 8px; width: 100%; justify-content: center; }
+  .hero .button { padding: 16px 12px; white-space: nowrap; }
+  .hero .button .emphasis-l { font-size: 13px; }
+  .hero-content > .hero-image { width: 100%; max-width: 500px; margin-inline: auto; }
+  .image.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+  }
+  .header [data-wf-target], .hero [data-wf-target],
+  .hero-text, .hero-h1, .hero-h1 *, .hero-image,
+  section[data-wf-target], .section [data-wf-target] {
+    opacity: 1 !important;
+    translate: none !important;
+    scale: none !important;
+    transform: none !important;
+  }
+  .section-heading, .heading-h2, .heading-h2 *, .section .body-l {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .visit-content .photo-block, .visit-content .photo-image-wrapper,
+  .visit-content .photo-image-wrapper .image,
+  .visit-content .photo-text-wrapper, .visit-content .illustration {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .menu-category .menu-item { gap: 12px; }
+  .menu-category .menu-item .volumes-wrapper { width: auto; flex-shrink: 0; }
+  .menu-category .menu-item .volumes-wrapper > .volume-text:nth-child(2) { display: none; }
+  .footer-menu, .footer-menu .menu-block { min-width: 0; }
+  .footer-link { overflow-wrap: anywhere; }
+  .whatsapp-float { bottom: max(16px, env(safe-area-inset-bottom)); }
+}
