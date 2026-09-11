@@ -287,7 +287,7 @@ a[href*="webflow.com"] {
     height: auto;
     min-height: 0;
     max-height: none;
-    padding: 64px 0 16px;
+    padding: 64px 0 0;
   }
   .hero .container { padding-inline: 20px; }
   .hero-content { width: 100%; gap: 20px; }
@@ -310,15 +310,22 @@ a[href*="webflow.com"] {
   .hero .buttons-wrapper { flex-flow: row; gap: 8px; width: 100%; justify-content: center; }
   .hero .button { padding: 16px 12px; white-space: nowrap; }
   .hero .button .emphasis-l { font-size: 13px; }
-  .hero-content > .hero-image { width: 100%; max-width: 500px; margin-inline: auto; }
+  .hero-content > .hero-image {
+    width: calc(100% + 40px);
+    max-width: none;
+    height: clamp(210px, 62vw, 420px);
+    margin: 8px -20px 0;
+    overflow: hidden;
+  }
   .image.hero-image {
     display: block;
-    width: 100%;
+    width: 120%;
+    max-width: none;
     height: auto;
     aspect-ratio: auto;
     object-fit: contain;
     object-position: center;
-    margin: 0 auto;
+    margin: -4% 0 0 -10%;
   }
   .header [data-wf-target], .hero [data-wf-target],
   .hero-text, .hero-h1, .hero-h1 *, .hero-image,
@@ -326,7 +333,7 @@ a[href*="webflow.com"] {
     opacity: 1 !important;
     translate: none !important;
     scale: none !important;
-    transform: none !important;
+    transform: translate3d(0, var(--mobile-reveal-y, 0px), 0) !important;
   }
   .section-heading, .heading-h2, .heading-h2 *, .section .body-l {
     opacity: 1 !important;

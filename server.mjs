@@ -15,4 +15,7 @@ http.createServer(async (request, response) => {
   } catch (error) {
     response.writeHead(error.code === 'ENOENT' ? 404 : 500); response.end('Unable to load page');
   }
-}).listen(3000, '127.0.0.1', () => console.log('http://127.0.0.1:3000'));
+}).listen(3000, '0.0.0.0', () => {
+  console.log('Local:   http://127.0.0.1:3000');
+  console.log('Rede:    http://192.168.100.145:3000');
+});

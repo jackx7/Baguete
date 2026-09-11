@@ -23,4 +23,27 @@
   localizeControls();
   window.Webflow = window.Webflow || [];
   window.Webflow.push(localizeControls);
+
+  // Short, one-shot entrances on phones; no hidden content or load-event wait.
+  if (window.gsap && 'IntersectionObserver' in window) {
+    const mobileMotion = window.gsap.matchMedia();
+    mobileMotion.add('(max-width: 767px) and (prefers-reduced-motion: no-preference)', () => {
+      const animations = [];
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          animations.push(window.gsap.fromTo(entry.target,
+            { '--mobile-reveal-y': '18px' },
+            { '--mobile-reveal-y': '0px', duration: 0.4, ease: 'power2.out', overwrite: 'auto' }));
+        });
+      }, { rootMargin: '0px 0px 40px 0px', threshold: 0.01 });
+      document.querySelectorAll('section[data-wf-target]').forEach(section => observer.observe(section));
+      return () => {
+        observer.disconnect();
+        animations.forEach(animation => animation.kill());
+        document.querySelectorAll('section[data-wf-target]').forEach(section => section.style.removeProperty('--mobile-reveal-y'));
+      };
+    });
+  }
 })();
