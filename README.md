@@ -1,4 +1,4 @@
-# Mello em português
+# Baguete — Padaria e Confeitaria
 
 Versão em português brasileiro de https://mello-coffee.webflow.io/, conforme a referência solicitada. Preserva a estrutura, as fotos, as ilustrações, as fontes, o CSS e as animações Webflow/GSAP originais. Marca, preços, unidades, endereço e contatos foram mantidos.
 
