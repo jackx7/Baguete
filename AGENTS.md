@@ -2,11 +2,13 @@
 
 ## Project Structure & Module Organization
 
-This repository contains a static landing page concept for Órbita, a creative studio. Page content lives in `dist/index.html`, with responsive styles in `dist/styles.css`. These are authored sources, so keep `dist/` tracked. `server.mjs` provides a local preview, and `.openai/hosting.json` identifies the hosted Site. No tests or framework are installed.
+This repository contains the Mello Coffee reference localized to Brazilian Portuguese. `dist/index.html` preserves the original Webflow structure and animations; `dist/assets/` contains its downloaded images, fonts, CSS and scripts. Local adjustments live in `dist/styles.css` and `dist/portuguese.js`. Keep `dist/` tracked. `server.mjs` provides local preview. The existing hosting manifest belongs to the earlier concept and does not mean this version is published.
 
 ## Build, Test, and Development Commands
 
 Run `node server.mjs` to preview the page at `http://127.0.0.1:3000`. Run `node --check server.mjs` to check server syntax. No dependency installation or build is required. There are no npm scripts, lint tools, or test commands. Update `README.md` and this guide if adding a toolchain.
+
+Edit `scripts/translate-mello.json` and run `node scripts/localize-mello.mjs` to regenerate translations. This requires network access and replaces `dist/index.html` from `mello-reference.html`. Preserve original interaction IDs, classes, script order and vendor assets to maintain visual fidelity.
 
 ## Coding Style & Naming Conventions
 

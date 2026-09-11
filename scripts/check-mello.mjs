@@ -1,0 +1,14 @@
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import path from 'node:path';
+const root = path.resolve(import.meta.dirname, '..');
+const html = readFileSync(path.join(root, 'dist/index.html'), 'utf8');
+const refs = [...html.matchAll(/(?:src|href)="(\/assets\/[^\"]+)"/g)].map(m => m[1]);
+const missing = refs.filter(p => !existsSync(path.join(root, 'dist', p)));
+const original = readFileSync(path.join(root, 'mello-reference.html'), 'utf8');
+const targets = text => [...text.matchAll(/data-wf-target="([^\"]+)"/g)].map(m => m[1]);
+const originalTargets = targets(original);
+const localizedTargets = targets(html);
+const preserved = JSON.stringify(originalTargets) === JSON.stringify(localizedTargets);
+const result = { assetReferences: refs.length, missing, downloadedAssets: readdirSync(path.join(root, 'dist/assets')).length, portuguese: html.includes('lang="pt-BR"'), animationTargets: originalTargets.length, animationTargetsPreserved: preserved };
+console.log(JSON.stringify(result, null, 2));
+if (missing.length || !result.portuguese || !preserved) process.exitCode = 1;

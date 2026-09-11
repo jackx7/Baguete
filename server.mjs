@@ -1,19 +1,18 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 
-const routes = new Map([
-  ['/', ['dist/index.html', 'text/html; charset=utf-8']],
-  ['/index.html', ['dist/index.html', 'text/html; charset=utf-8']],
-  ['/styles.css', ['dist/styles.css', 'text/css; charset=utf-8']],
-]);
+const directory = path.resolve(import.meta.dirname, 'dist');
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.avif': 'image/avif', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.ico': 'image/x-icon' };
 http.createServer(async (request, response) => {
-  const route = routes.get(new URL(request.url, 'http://localhost').pathname);
-  if (!route) { response.writeHead(404); response.end('Not found'); return; }
   try {
-    const content = await readFile(new URL(route[0], import.meta.url));
-    response.writeHead(200, { 'Content-Type': route[1] });
+    const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    const file = path.resolve(directory, '.' + (pathname === '/' ? '/index.html' : pathname));
+    if (!file.startsWith(directory + path.sep)) { response.writeHead(403); response.end('Forbidden'); return; }
+    const content = await readFile(file);
+    response.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream' });
     response.end(content);
-  } catch {
-    response.writeHead(500); response.end('Unable to load page');
+  } catch (error) {
+    response.writeHead(error.code === 'ENOENT' ? 404 : 500); response.end('Unable to load page');
   }
 }).listen(3000, '127.0.0.1', () => console.log('http://127.0.0.1:3000'));

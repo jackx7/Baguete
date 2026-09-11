@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow -->
+    <filter id="emblem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#241814" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Group Emblem -->
+  <g filter="url(#emblem-shadow)">
+    <!-- Wheat Stalks Flanking Badge -->
+    <g>
+      <g transform="translate(106.0, 122.0) rotate(-20) scale(0.90)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(102.2, 110.9) rotate(-23.57142857142857) scale(0.86)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(98.6, 100.4) rotate(-27.142857142857142) scale(0.82)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(95.2, 90.5) rotate(-30.714285714285715) scale(0.78)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(92.1, 81.2) rotate(-34.285714285714285) scale(0.75)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(89.4, 72.5) rotate(-37.85714285714286) scale(0.71)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(87.2, 64.4) rotate(-41.42857142857143) scale(0.67)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(85.5, 57.0) rotate(-45) scale(0.63)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L -4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    <g transform="translate(106, 127) scale(-1, 1)">
+      <path d="M 0,0 C -12,10 -22,25 -5,32 C 8,20 2,8 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+      <path d="M 0,0 C 12,12 20,28 3,34 C -10,22 -3,8 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+    </g></g>
+    <g>
+      <g transform="translate(254.0, 122.0) rotate(20) scale(0.90)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(257.8, 110.9) rotate(23.57142857142857) scale(0.86)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(261.4, 100.4) rotate(27.142857142857142) scale(0.82)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(264.8, 90.5) rotate(30.714285714285715) scale(0.78)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(267.9, 81.2) rotate(34.285714285714285) scale(0.75)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(270.6, 72.5) rotate(37.85714285714286) scale(0.71)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(272.8, 64.4) rotate(41.42857142857143) scale(0.67)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(274.5, 57.0) rotate(45) scale(0.63)">
+        <!-- Main Grain -->
+        <path d="M 0,0 C 6,-10 14,-14 16,-4 C 18,6 6,14 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+        <path d="M 0,0 C -6,-10 -14,-14 -16,-4 C -18,6 -6,14 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+        <!-- Awn / Spike tip -->
+        <path d="M 0,-6 L 4,-22" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    <g transform="translate(254, 127) scale(1, 1)">
+      <path d="M 0,0 C -12,10 -22,25 -5,32 C 8,20 2,8 0,0 Z" fill="#E5A93B" stroke="#B8831C" stroke-width="1"/>
+      <path d="M 0,0 C 12,12 20,28 3,34 C -10,22 -3,8 0,0 Z" fill="#F0B429" stroke="#B8831C" stroke-width="1"/>
+    </g></g>
+
+    <!-- Outer Serrated Starburst Badge (Golden Yellow) -->
+    <polygon points="180.00,18.00 185.44,28.28 192.89,19.35 196.07,30.55 205.22,23.36 206.00,34.97 216.44,29.84 214.79,41.36 226.07,38.51 222.07,49.44 233.69,49.00 227.50,58.85 238.97,60.84 230.86,69.19 241.66,73.52 232.00,80.00 241.66,86.48 230.86,90.81 238.97,99.16 227.50,101.15 233.69,111.00 222.07,110.56 226.07,121.49 214.79,118.64 216.44,130.16 206.00,125.03 205.22,136.64 196.07,129.45 192.89,140.65 185.44,131.72 180.00,142.00 174.56,131.72 167.11,140.65 163.93,129.45 154.78,136.64 154.00,125.03 143.56,130.16 145.21,118.64 133.93,121.49 137.93,110.56 126.31,111.00 132.50,101.15 121.03,99.16 129.14,90.81 118.34,86.48 128.00,80.00 118.34,73.52 129.14,69.19 121.03,60.84 132.50,58.85 126.31,49.00 137.93,49.44 133.93,38.51 145.21,41.36 143.56,29.84 154.00,34.97 154.78,23.36 163.93,30.55 167.11,19.35 174.56,28.28" fill="#F0B429" stroke="#C48E19" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Inner Serrated Green Field -->
+    <polygon points="180.00,23.00 185.02,32.26 191.85,24.25 194.83,34.35 203.18,27.93 204.00,38.43 213.50,33.89 212.12,44.33 222.36,41.86 218.83,51.79 229.36,51.50 223.85,60.48 234.21,62.39 226.95,70.02 236.69,74.04 228.00,80.00 236.69,85.96 226.95,89.98 234.21,97.61 223.85,99.52 229.36,108.50 218.83,108.21 222.36,118.14 212.12,115.67 213.50,126.11 204.00,121.57 203.18,132.07 194.83,125.65 191.85,135.75 185.02,127.74 180.00,137.00 174.98,127.74 168.15,135.75 165.17,125.65 156.82,132.07 156.00,121.57 146.50,126.11 147.88,115.67 137.64,118.14 141.17,108.21 130.64,108.50 136.15,99.52 125.79,97.61 133.05,89.98 123.31,85.96 132.00,80.00 123.31,74.04 133.05,70.02 125.79,62.39 136.15,60.48 130.64,51.50 141.17,51.79 137.64,41.86 147.88,44.33 146.50,33.89 156.00,38.43 156.82,27.93 165.17,34.35 168.15,24.25 174.98,32.26" fill="#006B3F" stroke="#F0B429" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Signature Monogram 'B' (White with loop at bottom) -->
+    <!-- Matching storefront sign loop & flourish -->
+    <g transform="translate(154, 42)">
+      <!-- Main White 'B' Body -->
+      <path d="M 12,5 
+               C 8,5 4,8 4,13 
+               C 4,13 4,46 4,46 
+               C 1,42 -4,42 -7,45 
+               C -11,49 -11,56 -6,60 
+               C -1,64 7,63 11,57 
+               C 14,52 14,46 14,46 
+               C 14,46 14,46 14,46 
+               C 18,48 24,50 31,50 
+               C 43,50 52,41 52,29 
+               C 52,20 45,13 37,12 
+               C 42,10 46,6 46,0 
+               C 46,-8 38,-13 26,-13 
+               C 18,-13 12,-10 8,-6 
+               L 12,5 Z
+               
+               M 16,1 
+               C 20,1 26,3 26,7 
+               C 26,11 20,13 16,13 
+               L 14,13 L 14,1 L 16,1 Z
+               
+               M 16,21 
+               C 23,21 32,23 32,30 
+               C 32,37 23,39 16,39 
+               L 14,39 L 14,21 L 16,21 Z" 
+            fill="#FFFFFF" 
+            stroke="#FFFFFF" 
+            stroke-width="3" 
+            stroke-linejoin="round" 
+            stroke-linecap="round"/>
+
+      <!-- Inner Green Shadow Detail on B stem -->
+      <path d="M 6,18 C 6,28 6,38 6,45 C 8,42 10,42 12,45" 
+            fill="none" 
+            stroke="#005230" 
+            stroke-width="2.5" 
+            stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Typography: Baguete -->
+  <text x="180" y="194" 
+        text-anchor="middle" 
+        font-family="Georgia, 'Times New Roman', 'Playfair Display', serif" 
+        font-weight="900" 
+        font-size="52" 
+        fill="#B8141B" 
+        letter-spacing="-0.5">Baguete</text>
+
+  <!-- Subtitle: PADARIA E CONFEITARIA -->
+  <text x="180" y="224" 
+        text-anchor="middle" 
+        font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" 
+        font-weight="800" 
+        font-size="12" 
+        fill="#D49B28" 
+        letter-spacing="4">PADARIA E CONFEITARIA</text>
+</svg>
